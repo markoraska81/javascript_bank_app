@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bank app</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="button-container">
+    <h3>Bank App</h3>
+    <button id="accBtn">Accounts</button>
+    <button id="addBtn">Add Account</button>
+    <button id="editDelBtn">Edit / Delete</button>
+  </div>
+  <div class="account-container">
+    <div id="accountPage">
+        <h4>Accounts</h4>
+        <div class="table-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Deposit</th>
+                <th>Credit Card</th>
+              </tr>
+            </thead>
+            <tbody id="mainTbody">
+
+            </tbody>
+          </table>
+      </div>
+    </div>
+    <div id="addAccountPage">
+      <h4>Add Accounts</h4>
+        <div class="table-addContainer">
+          <input id="accId" type="text" placeholder="id"><br />
+          <input id="accName" type="text" placeholder="name"><br />
+          <input id="accDeposit" type="text" placeholder="deposit"><br />
+          <input id="accCard" type="text" placeholder="credit card"><br />
+          <button id="saveAddBtn">Save</button>
+          <button id="cancelAddBtn">Cancel</button>
+        </div>
+    </div>
+    <div id="editDelAccountPage">
+      <h4>Edit/Delete Account</h4>
+      <div class="table-editDeleteContainer">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Deposit</th>
+              <th>Credit Card</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="editTbody">
+
+          </tbody>
+        </table>
+      </div>
+  </div>
+  <div id="editAccountPage">
+    <h4>Edit Accounts</h4>
+      <div class="table-editContainer">
+        <input id="editAccId" type="text" placeholder="id"><br />
+        <input id="editAccName" type="text" placeholder="name"><br />
+        <input id="editAccDeposit" type="text" placeholder="deposit"><br />
+        <input id="editAccCard" type="text" placeholder="credit card"><br />
+        <button id="saveEditBtn">Save</button>
+        <button id="cancelEditBtn">Cancel</button>
+      </div>
+  </div>
+  <!-- <div id="deleteAccountPage">
+    <h4>Delete Accounts</h4>
+      <div class="table-deleteContainer">
+        <input id="editAccId" type="text" placeholder="id"><br />
+        <input id="editAccName" type="text" placeholder="name"><br />
+        <input id="editAccDeposit" type="text" placeholder="deposit"><br />
+        <input id="eeditAccCard" type="text" placeholder="credit card"><br />
+        <button id="okBtn">Delete</button>
+        <button id="cancelBtn">Cancel</button>
+      </div>
+  </div> -->
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
